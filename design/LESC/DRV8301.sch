@@ -1,0 +1,72 @@
+EESchema Schematic File Version 4
+LIBS:LESC-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title "VESC 6.4 redraw"
+Date "2018-04-26"
+Rev "6.4"
+Comp "LI XITONG"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L crf_1:DRV8302 U2
+U 1 1 5AE19110
+P 5600 2850
+F 0 "U2" H 5600 4487 60  0000 C CNN
+F 1 "DRV8302" H 5600 4381 60  0000 C CNN
+F 2 "" H 5600 2850 60  0001 C CNN
+F 3 "" H 5600 2850 60  0000 C CNN
+	1    5600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5AE19004
+P 3600 1450
+F 0 "R?" H 3670 1496 50  0000 L CNN
+F 1 "R" H 3670 1405 50  0000 L CNN
+F 2 "" V 3530 1450 50  0001 C CNN
+F 3 "~" H 3600 1450 50  0001 C CNN
+	1    3600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5AE19184
+P 3600 1050
+F 0 "R?" H 3670 1096 50  0000 L CNN
+F 1 "R" H 3670 1005 50  0000 L CNN
+F 2 "" V 3530 1050 50  0001 C CNN
+F 3 "~" H 3600 1050 50  0001 C CNN
+	1    3600 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5AE19415
+P 4000 1450
+F 0 "R?" H 4070 1496 50  0000 L CNN
+F 1 "R" H 4070 1405 50  0000 L CNN
+F 2 "" V 3930 1450 50  0001 C CNN
+F 3 "~" H 4000 1450 50  0001 C CNN
+	1    4000 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5AE17E70
+P 4550 1100
+F 0 "R?" H 4620 1146 50  0000 L CNN
+F 1 "R" H 4620 1055 50  0000 L CNN
+F 2 "" V 4480 1100 50  0001 C CNN
+F 3 "~" H 4550 1100 50  0001 C CNN
+	1    4550 1100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
