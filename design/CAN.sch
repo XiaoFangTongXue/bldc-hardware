@@ -1,0 +1,127 @@
+EESchema Schematic File Version 4
+LIBS:LESC-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L crf_1:TJA1042TK_3 U?
+U 1 1 5AEABFE9
+P 5900 3200
+F 0 "U?" H 5900 3637 60  0000 C CNN
+F 1 "TJA1042TK_3" H 5900 3531 60  0000 C CNN
+F 2 "" H 5900 3200 60  0000 C CNN
+F 3 "" H 5900 3200 60  0000 C CNN
+	1    5900 3200
+	1    0    0    -1  
+$EndComp
+Text HLabel 5300 3050 0    50   Input ~ 0
+TX
+Text HLabel 5300 3350 0    50   Input ~ 0
+RX
+$Comp
+L Device:C C?
+U 1 1 5AEAC294
+P 4600 3550
+F 0 "C?" H 4715 3596 50  0000 L CNN
+F 1 "C" H 4715 3505 50  0000 L CNN
+F 2 "" H 4638 3400 50  0001 C CNN
+F 3 "~" H 4600 3550 50  0001 C CNN
+	1    4600 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5AEAC2CC
+P 6900 3600
+F 0 "C?" H 7015 3646 50  0000 L CNN
+F 1 "C" H 7015 3555 50  0000 L CNN
+F 2 "" H 6938 3450 50  0001 C CNN
+F 3 "~" H 6900 3600 50  0001 C CNN
+	1    6900 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 3250 4600 3250
+Wire Wire Line
+	4600 3250 4600 3400
+Wire Wire Line
+	4600 3700 4600 4000
+Wire Wire Line
+	4600 4000 4950 4000
+Wire Wire Line
+	6900 4000 6900 3750
+Wire Wire Line
+	5300 3150 4950 3150
+Wire Wire Line
+	4950 3150 4950 4000
+Connection ~ 4950 4000
+Wire Wire Line
+	4950 4000 6650 4000
+Wire Wire Line
+	6500 3050 6650 3050
+Wire Wire Line
+	6650 3050 6650 4000
+Connection ~ 6650 4000
+Wire Wire Line
+	6650 4000 6900 4000
+Wire Wire Line
+	6500 3350 6900 3350
+Wire Wire Line
+	6900 3350 6900 3450
+$Comp
+L Device:R R?
+U 1 1 5AEAC462
+P 7400 3200
+F 0 "R?" H 7470 3246 50  0000 L CNN
+F 1 "R" H 7470 3155 50  0000 L CNN
+F 2 "" V 7330 3200 50  0001 C CNN
+F 3 "~" H 7400 3200 50  0001 C CNN
+	1    7400 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3250 7200 3250
+Wire Wire Line
+	7200 3250 7200 3450
+Wire Wire Line
+	7200 3450 7400 3450
+Wire Wire Line
+	7650 3450 7650 3250
+Wire Wire Line
+	7650 3250 7800 3250
+Wire Wire Line
+	6500 3150 7200 3150
+Wire Wire Line
+	7200 3150 7200 2900
+Wire Wire Line
+	7200 2900 7400 2900
+Wire Wire Line
+	7650 2900 7650 3100
+Wire Wire Line
+	7650 3100 7800 3100
+Wire Wire Line
+	7400 2900 7400 3050
+Connection ~ 7400 2900
+Wire Wire Line
+	7400 2900 7650 2900
+Wire Wire Line
+	7400 3350 7400 3450
+Connection ~ 7400 3450
+Wire Wire Line
+	7400 3450 7650 3450
+Text HLabel 7800 3100 2    50   Input ~ 0
+CANH
+Text HLabel 7800 3250 2    50   Input ~ 0
+CANL
+$EndSCHEMATC
