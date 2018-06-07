@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L crf_1:DRV8302 U3
-U 1 1 5AE19110
-P 5600 2850
-F 0 "U3" H 5600 4487 60  0000 C CNN
-F 1 "DRV8302" H 5600 4381 60  0000 C CNN
-F 2 "" H 5600 2850 60  0001 C CNN
-F 3 "" H 5600 2850 60  0000 C CNN
-	1    5600 2850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R13
 U 1 1 5AE19004
 P 3600 1450
@@ -122,7 +111,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 900  3600 900 
 Wire Wire Line
-	3600 1200 3600 1300
+	3600 1200 3600 1250
 Wire Wire Line
 	3600 900  4000 900 
 Connection ~ 3600 900 
@@ -149,11 +138,6 @@ Wire Wire Line
 	4800 1500 4550 1500
 Wire Wire Line
 	4550 1500 4550 1250
-Wire Wire Line
-	3600 1600 3600 1700
-Wire Wire Line
-	3600 1700 4800 1700
-Connection ~ 3600 1600
 NoConn ~ 4800 1800
 NoConn ~ 4800 1900
 Text HLabel 4800 2000 0    50   Input ~ 0
@@ -383,16 +367,13 @@ Wire Wire Line
 Wire Wire Line
 	6700 1150 6700 1200
 Wire Wire Line
-	6400 1800 6400 1700
-Wire Wire Line
-	6400 1700 6950 1700
+	6400 1700 6600 1700
 Wire Wire Line
 	6950 1700 6950 1250
 Wire Wire Line
 	6950 1250 7200 1250
 Wire Wire Line
 	7200 1250 7200 1300
-Connection ~ 6400 1700
 Wire Wire Line
 	7200 1250 7350 1250
 Connection ~ 7200 1250
@@ -545,16 +526,7 @@ GL_C
 Text HLabel 6400 3700 2    50   Input ~ 0
 SL_C
 Wire Wire Line
-	6400 4100 6400 4000
-Connection ~ 6400 3900
-Wire Wire Line
-	6400 3900 6400 3800
-Connection ~ 6400 4000
-Wire Wire Line
-	6400 4000 6400 3900
-Wire Wire Line
 	6400 3800 6700 3800
-Connection ~ 6400 3800
 $Comp
 L power:GND #PWR045
 U 1 1 5AE2D1C7
@@ -1066,4 +1038,40 @@ F 3 "" H 3300 6150 50  0001 C CNN
 	1    3300 6150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3600 1250 3850 1250
+Wire Wire Line
+	3850 1250 3850 1700
+Wire Wire Line
+	3850 1700 4800 1700
+Connection ~ 3600 1250
+Wire Wire Line
+	3600 1250 3600 1300
+$Comp
+L bldc:DRV8301 U?
+U 1 1 5B1AF007
+P 5600 2850
+F 0 "U?" H 5600 4487 60  0000 C CNN
+F 1 "DRV8301" H 5600 4381 60  0000 C CNN
+F 2 "" H 5600 2850 60  0000 C CNN
+F 3 "" H 5600 2850 60  0000 C CNN
+	1    5600 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1800 6600 1800
+Wire Wire Line
+	6600 1800 6600 1700
+Connection ~ 6600 1700
+Wire Wire Line
+	6600 1700 6950 1700
+Wire Wire Line
+	6400 4100 6400 4000
+Connection ~ 6400 3800
+Connection ~ 6400 3900
+Wire Wire Line
+	6400 3900 6400 3800
+Connection ~ 6400 4000
+Wire Wire Line
+	6400 4000 6400 3900
 $EndSCHEMATC

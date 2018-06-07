@@ -1,5 +1,5 @@
 (sym_lib_table
   (lib (name crf_1)(type Legacy)(uri ${KIPRJMOD}/Libraries/crf_1.lib)(options "")(descr ""))
-  (lib (name LESC-cache)(type Legacy)(uri /home/x/Desktop/bldc-hardware/design/LESC-cache.lib)(options "")(descr ""))
   (lib (name crf_2)(type Legacy)(uri ${KIPRJMOD}/Libraries/crf_2.lib)(options "")(descr ""))
+  (lib (name bldc)(type Legacy)(uri ${KIPRJMOD}/Libraries/bldc.lib)(options "")(descr ""))
 )

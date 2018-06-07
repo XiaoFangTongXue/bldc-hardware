@@ -26,28 +26,6 @@ F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD8418.p
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:IRF7748L1 Q3
-U 1 1 5AE649B5
-P 6600 1600
-F 0 "Q3" H 6806 1646 50  0000 L CNN
-F 1 "IRF7748L1" H 6250 1850 50  0000 L CNN
-F 2 "Package_DirectFET:DirectFET_L6" H 6600 1600 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf7748l1pbf.pdf?fileId=5546d462533600a40153560434c11c9e" H 6600 1600 50  0001 L CNN
-	1    6600 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:IRF7748L1 Q4
-U 1 1 5AE64A1D
-P 6600 3200
-F 0 "Q4" H 6806 3246 50  0000 L CNN
-F 1 "IRF7748L1" H 6300 3400 50  0000 L CNN
-F 2 "Package_DirectFET:DirectFET_L6" H 6600 3200 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf7748l1pbf.pdf?fileId=5546d462533600a40153560434c11c9e" H 6600 3200 50  0001 L CNN
-	1    6600 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R34
 U 1 1 5AE2966E
 P 6100 1600
@@ -241,28 +219,6 @@ F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD8418.p
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:IRF7748L1 Q1
-U 1 1 5AE2EF36
-P 2900 1650
-F 0 "Q1" H 3106 1696 50  0000 L CNN
-F 1 "IRF7748L1" H 2550 1900 50  0000 L CNN
-F 2 "Package_DirectFET:DirectFET_L6" H 2900 1650 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf7748l1pbf.pdf?fileId=5546d462533600a40153560434c11c9e" H 2900 1650 50  0001 L CNN
-	1    2900 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:IRF7748L1 Q2
-U 1 1 5AE2EF3C
-P 2900 3250
-F 0 "Q2" H 3106 3296 50  0000 L CNN
-F 1 "IRF7748L1" H 2600 3450 50  0000 L CNN
-F 2 "Package_DirectFET:DirectFET_L6" H 2900 3250 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf7748l1pbf.pdf?fileId=5546d462533600a40153560434c11c9e" H 2900 3250 50  0001 L CNN
-	1    2900 3250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R26
 U 1 1 5AE2EF42
 P 2400 1650
@@ -454,28 +410,6 @@ F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/AD8418.p
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:IRF7748L1 Q5
-U 1 1 5AE3105F
-P 10050 1650
-F 0 "Q5" H 10256 1696 50  0000 L CNN
-F 1 "IRF7748L1" H 9700 1900 50  0000 L CNN
-F 2 "Package_DirectFET:DirectFET_L6" H 10050 1650 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf7748l1pbf.pdf?fileId=5546d462533600a40153560434c11c9e" H 10050 1650 50  0001 L CNN
-	1    10050 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:IRF7748L1 Q6
-U 1 1 5AE31065
-P 10050 3250
-F 0 "Q6" H 10256 3296 50  0000 L CNN
-F 1 "IRF7748L1" H 9750 3550 50  0000 L CNN
-F 2 "Package_DirectFET:DirectFET_L6" H 10050 3250 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf7748l1pbf.pdf?fileId=5546d462533600a40153560434c11c9e" H 10050 3250 50  0001 L CNN
-	1    10050 3250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R37
 U 1 1 5AE3106B
 P 9550 1650
@@ -659,11 +593,8 @@ Wire Wire Line
 	3000 1100 6700 1100
 Wire Wire Line
 	10150 1100 10150 1450
-Connection ~ 3000 1450
-Connection ~ 10150 1450
 Wire Wire Line
 	6700 1100 6700 1400
-Connection ~ 6700 1400
 Wire Wire Line
 	3000 4250 6700 4250
 Wire Wire Line
@@ -1000,4 +931,89 @@ F 3 "~" H 10700 4250 50  0001 C CNN
 	1    10700 4250
 	1    0    0    -1  
 $EndComp
+Text HLabel 10150 800  0    50   Input ~ 0
+SUPPLY
+Wire Wire Line
+	10150 800  10150 1100
+Connection ~ 10150 1100
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 5B168A48
+P 10350 1100
+F 0 "J?" H 10350 1200 50  0000 C CNN
+F 1 "SUPPLY" H 10350 1000 50  0000 C CNN
+F 2 "" H 10350 1100 50  0001 C CNN
+F 3 "~" H 10350 1100 50  0001 C CNN
+	1    10350 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L bldc:IRF7749 Q?
+U 1 1 5B1C0925
+P 3000 1650
+F 0 "Q?" H 3106 1696 50  0000 L CNN
+F 1 "IRF7749" H 3106 1605 50  0000 L CNN
+F 2 "" H 3000 1650 50  0001 C CNN
+F 3 "" H 3000 1650 50  0001 C CNN
+	1    3000 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3000 1450
+$Comp
+L bldc:IRF7749 Q?
+U 1 1 5B1C81B4
+P 3000 3250
+F 0 "Q?" H 3106 3296 50  0000 L CNN
+F 1 "IRF7749" H 3106 3205 50  0000 L CNN
+F 2 "" H 3000 3250 50  0001 C CNN
+F 3 "" H 3000 3250 50  0001 C CNN
+	1    3000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L bldc:IRF7749 Q?
+U 1 1 5B1C8A99
+P 6700 1600
+F 0 "Q?" H 6806 1646 50  0000 L CNN
+F 1 "IRF7749" H 6806 1555 50  0000 L CNN
+F 2 "" H 6700 1600 50  0001 C CNN
+F 3 "" H 6700 1600 50  0001 C CNN
+	1    6700 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 6700 1400
+$Comp
+L bldc:IRF7749 Q?
+U 1 1 5B1C8BE9
+P 6700 3200
+F 0 "Q?" H 6806 3246 50  0000 L CNN
+F 1 "IRF7749" H 6806 3155 50  0000 L CNN
+F 2 "" H 6700 3200 50  0001 C CNN
+F 3 "" H 6700 3200 50  0001 C CNN
+	1    6700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L bldc:IRF7749 Q?
+U 1 1 5B1C8DFD
+P 10150 3250
+F 0 "Q?" H 10256 3296 50  0000 L CNN
+F 1 "IRF7749" H 10256 3205 50  0000 L CNN
+F 2 "" H 10150 3250 50  0001 C CNN
+F 3 "" H 10150 3250 50  0001 C CNN
+	1    10150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L bldc:IRF7749 Q?
+U 1 1 5B1C8EF5
+P 10150 1650
+F 0 "Q?" H 10256 1696 50  0000 L CNN
+F 1 "IRF7749" H 10256 1605 50  0000 L CNN
+F 2 "" H 10150 1650 50  0001 C CNN
+F 3 "" H 10150 1650 50  0001 C CNN
+	1    10150 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 10150 1450
 $EndSCHEMATC

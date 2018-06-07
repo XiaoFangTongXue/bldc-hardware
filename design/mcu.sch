@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L crf_1:STM32F40X_LQFP64 U1
-U 1 1 5AE14E6D
-P 5350 3300
-F 0 "U1" H 5350 5737 60  0000 C CNN
-F 1 "STM32F40X_LQFP64" H 5350 5631 60  0000 C CNN
-F 2 "" H 5350 3300 60  0001 C CNN
-F 3 "" H 5350 3300 60  0000 C CNN
-	1    5350 3300
-	1    0    0    -1  
-$EndComp
 Text HLabel 4100 1150 0    50   Input ~ 0
 VOLTAGE_1
 Text HLabel 4100 1250 0    50   Input ~ 0
@@ -237,17 +226,6 @@ F 3 "" H 6600 3500 50  0001 C CNN
 	1    6600 3500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6600 3500 6600 3750
-Connection ~ 6600 3750
-Wire Wire Line
-	6600 3750 6600 3850
-Connection ~ 6600 3850
-Wire Wire Line
-	6600 3850 6600 3950
-Connection ~ 6600 3950
-Wire Wire Line
-	6600 3950 6600 4050
 $Comp
 L power:GND #PWR025
 U 1 1 5AE16A27
@@ -259,9 +237,6 @@ F 3 "" H 6600 4450 50  0001 C CNN
 	1    6600 4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6600 4350 6600 4450
-Connection ~ 6600 4450
 $Comp
 L power:VCC #PWR026
 U 1 1 5AE16BF8
@@ -374,4 +349,29 @@ Wire Wire Line
 	6750 5450 6750 5650
 Wire Wire Line
 	6750 5650 6950 5650
+Wire Wire Line
+	6600 3500 6600 3750
+$Comp
+L bldc:STM32F40X_LQFP64 U?
+U 1 1 5B1B9E2F
+P 5350 3300
+F 0 "U?" H 5350 5737 60  0000 C CNN
+F 1 "STM32F40X_LQFP64" H 5350 5631 60  0000 C CNN
+F 2 "" H 5350 3300 60  0000 C CNN
+F 3 "" H 5350 3300 60  0000 C CNN
+	1    5350 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4050 6600 3950
+Connection ~ 6600 3750
+Connection ~ 6600 3850
+Wire Wire Line
+	6600 3850 6600 3750
+Connection ~ 6600 3950
+Wire Wire Line
+	6600 3950 6600 3850
+Wire Wire Line
+	6600 4350 6600 4450
+Connection ~ 6600 4450
 $EndSCHEMATC
