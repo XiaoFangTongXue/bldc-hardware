@@ -2,4 +2,5 @@
   (lib (name crf_1)(type Legacy)(uri ${KIPRJMOD}/Libraries/crf_1.lib)(options "")(descr ""))
   (lib (name crf_2)(type Legacy)(uri ${KIPRJMOD}/Libraries/crf_2.lib)(options "")(descr ""))
   (lib (name bldc)(type Legacy)(uri ${KIPRJMOD}/Libraries/bldc.lib)(options "")(descr ""))
+  (lib (name ESCX-rescue)(type Legacy)(uri ${KIPRJMOD}/ESCX-rescue.lib)(options "")(descr ""))
 )

@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP TJA1051TK-3
+D High-Speed CAN Transceiver, separate VIO, silent mode, DFN-8-1EP
+K High-Speed CAN Transceiver HVSON-8
+F http://www.nxp.com/documents/data_sheet/TJA1051.pdf
+$ENDCMP
+#
 $CMP USB_OTG
 D USB mini/micro connector
 K connector USB
